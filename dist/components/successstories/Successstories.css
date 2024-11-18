@@ -1,0 +1,143 @@
+.heading-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .custom-navigation {
+    display: flex;
+    gap: 10px;
+    margin-left: auto; /* Pushes buttons to the far right */
+  }
+  
+  .custom-prev, .custom-next {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    padding: 0;
+    line-height: 1;
+    svg {
+        vertical-align: bottom;
+    }
+  }
+
+  .swiper-slide.card-item {
+    border: 1px solid #cbcbcb;
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  .custom-navigation div {
+    border: 2px solid #8a8a8a;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custom-prev:hover, .custom-next:hover {
+    color: #555;
+  }
+
+  p.card-para {
+    font-size: 14px;
+    color: #565151;
+
+  }
+  
+.card-button.book-button {
+    float: left;;
+}
+ 
+  .heading-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .heading-with-icon h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .badge {
+    background-color: #3333337d;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-weight: 300;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    margin: 20px 0;
+    line-height: 1.5;
+  }
+  
+  .card-button a {
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+
+
+  @media (min-width: 767px) {
+    .custom-navigation-mob {
+        display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .custom-navigation-mob {
+        margin: 30px 0;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+    .custom-navigation-mob div {
+        border: 2px solid #8a8a8a;
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .custom-navigation {
+        display: none;
+    }
+
+    .success-slider {
+        padding: 0 1rem;
+    }
+
+
+
+  }

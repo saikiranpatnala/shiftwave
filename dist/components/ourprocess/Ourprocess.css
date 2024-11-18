@@ -1,0 +1,76 @@
+.box-main {
+    border: 1px solid #cbcbcb;
+    padding: 1rem 2rem;
+    border-right: none;
+    .box-lottie {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0 2rem; 
+        
+        div {
+            max-width: 150px;
+        }
+    }
+}
+
+.ourprocess-box:nth-child(4) .box-main {
+    border-right: 1px solid #cbcbcb;
+}
+
+.ourprocess-sub {
+    display: grid;
+    grid-template-columns: repeat(var(--products-column, 4), 1fr);
+}
+
+.heading-with-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    img {
+        max-width: 50px;
+        margin-right: 1rem;
+    }
+    h2 {
+        color: #ec2a25;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 768px) { 
+    .ourprocess-main {
+        overflow: hidden;
+        .col-6 {
+        padding: 0;
+        }
+    }
+    .box-main {
+        padding: 1rem;
+        p {
+            font-size: 14px;
+        }
+        .box-lottie {
+            div {
+                max-width: 80px;
+            }
+        }
+    }
+    .ourprocess-sub {
+        grid-template-columns: repeat(var(--products-column, 2), 1fr);
+        padding: 1rem;
+    }
+    .ourprocess-box .box-main {
+        border: 1px solid #cbcbcb;
+    }
+    .ourprocess-box:nth-child(1) .box-main, .ourprocess-box:nth-child(3) .box-main {
+        border-right:none;
+    }
+    .ourprocess-box:nth-child(1) .box-main, .ourprocess-box:nth-child(2) .box-main {
+        border-bottom: none;
+    }
+    .heading-with-icon {
+        justify-content: center;
+    }
+
+
+}

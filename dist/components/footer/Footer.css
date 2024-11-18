@@ -1,0 +1,36 @@
+.footer-logo { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img {
+    width: 100%;
+    max-width: 200px;
+}
+}
+.footer-jumbo {
+    font-size: 28px;
+    color: #ec2b25;
+}
+.follow-text {
+    font-size: 22px;
+    color: #565151;
+}
+.footer {
+    ul {
+        padding-left: 5px;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 500;
+        color: #565151;
+    }
+    li {
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: #565151;
+            line-height: 2;
+        }
+    }
+
+}

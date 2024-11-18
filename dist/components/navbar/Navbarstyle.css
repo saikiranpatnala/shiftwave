@@ -1,0 +1,173 @@
+.desktop-header .cta-btn-mob a:first-child {
+    margin-right: 5px;
+}
+
+.mobMenu {
+    background: #fff;
+    max-width: 100%;
+    display: block !important;
+    left: -100%;
+    transition: .5s ease-in;
+    width: 100%;
+    z-index: 10000;
+}
+
+.mobMenu.show {
+    left: 0;
+}
+
+.mobMenu .btn-close i:before {
+    color: #453828;
+    font-size: 30px;
+}
+
+.mobMenu .modal-dialog {
+    margin: 0;
+    max-width: 100% !important;
+}
+
+.mobMenu .modal-content {
+    background: none;
+    border: none;
+    margin-top: 3% !important;
+    width: 85%;
+    margin: auto;
+}
+
+.modal {
+    background: #ec2b25;
+}
+
+.box-menu h3 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: left;
+    margin: 20px 0 10px 0;
+}
+
+.modal-body button svg {
+    font-size: 40px;
+    color: #292929;
+    padding: 5px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+
+.mobMenu .btn-close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: none;
+    padding: 0;
+    width: auto;
+    height: auto;
+    z-index: 20;
+    opacity: 1;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.mobMenu .menu {
+    padding-top: 3rem;
+}
+
+.mobMenu .menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mobMenu .menu .menu-item {
+    position: relative;
+}
+
+.mobMenu .menu .menu-item a {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 6px 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.mobMenu .menu .sub-menu {
+    padding-left: 1rem;
+}
+
+.mobMenu .menu .sub-menu .menu-item a {
+    font-weight: 400;
+    color: #666;
+    padding: 6px 5px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.mobMenu .menu .sub-menu {
+    padding-left: 1rem;
+}
+
+.box-menu {
+    width: 25%;
+    float: left !important;
+}
+
+.logo {
+    max-width: 200px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.book-button {
+    padding: 10px;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 160px;
+    background: #ec2b25;
+    border: none;
+    color: #fff;
+    float: right;
+}
+
+.book-button:hover {
+    scale: 1.05;
+    transition-delay: 0.4s ease-in;
+}
+
+
+@media (max-width: 768px) {
+    .desk-menu {
+        display: none;
+    }
+    .content .col-9 {
+        padding: 0;
+    }
+    .book-button {
+        max-width: 120px;
+        font-size: 14px;
+    }
+    .box-menu {
+        width: 100%;
+        h3 {
+            font-size: 18px;
+        }
+        div {
+            height: 100%;
+        }
+    }
+    .mobMenu .menu {
+        display: grid;
+        grid-template-columns: repeat(var(--products-column, 2), 1fr);
+        .menu-item a {
+            font-size: 12px;
+        }
+    }
+    .mobMenu .modal-content {
+        width: 100%;
+    }
+
+
+
+
+}
